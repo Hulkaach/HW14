@@ -8,7 +8,13 @@ public class Main {
     }
 
     public static double avg(int num) {
+        String str = String.valueOf(num);
+        double sum = 0;
+        for (int i = 0; i < str.length(); i++) {
+            sum += Integer.parseInt(String.valueOf(str.charAt(i)));
+            System.out.println(sum);
+        }
         //todo Дописать логику работы метода сюда. Метод main не трогаем!!!
-        return 0; //todo заменить 0 на корректный результат.
+        return sum/str.length();
     }
 }
